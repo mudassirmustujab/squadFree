@@ -1,0 +1,391 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Raleway", sans-serif;
+
+}
+
+/* Loader Starts Here */
+/* Loader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #67b0d1;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader h1 {
+    font-size: 8vh;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 6vh;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.loader::after {
+    content: "";
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 5px solid whitesmoke;
+    border-top-color: royalblue;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/*Loader Ends Here  */
+
+
+.navbar .container-fluid .navbar-nav li a:hover {
+    color: rgb(190, 190, 190) !important;
+}
+
+/* Section 1 Starts Here */
+.sec1 {
+    height: 90vh;
+    width: 100vw;
+    background-image: url("img/hero-bg.jpg");
+    background-color: rgb(177, 177, 177);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white !important;
+
+}
+
+.homeLink {
+    color: white;
+    background: #ffffff2d;
+}
+
+.sec1 h1 {
+    text-shadow: 1px 1px 1px gray;
+}
+
+.sec1 h3 {
+    text-shadow: 1px 1px 1px gray;
+}
+
+/* Section 2 Starts Here */
+
+.sec2 {
+    background-image: url("img/about-bg.jpg");
+}
+
+.sec2 .container-lg .row .col-11 a:hover {
+    background-color: #a1bdca;
+
+}
+
+.sec2 img {
+    height: 4rem !important;
+    width: 4rem !important;
+}
+
+.sec2 h4 {
+    margin: 0.6rem 0rem;
+}
+
+/* Section 3 Starts Here (Services) */
+.sec3Card {
+    box-shadow: 1px 1px 3px gainsboro;
+    border-radius: 3px;
+    padding: 1rem 1rem;
+    font-size: 0.7rem !important;
+    width: 18rem;
+    height: 14rem;
+    margin-top: 1.5rem;
+}
+
+
+/* Section 5 Starts Here (Portfolio)*/
+
+.sec5 .row {
+    margin-top: 1rem;
+}
+
+.sec5 a {
+    background-color: #c8eafa8c;
+}
+
+/* Section 6 Starts Here (Contact) */
+.sec6 {
+    background-color: #edf9ff8c;
+
+}
+
+/* Utility Classes Starts Here */
+
+.colors {
+    color: #67b0d1;
+    background-color: #f4f9fc;
+    font-family: "Raleway", sans-serif;
+}
+
+.colorWhite {
+    color: white !important;
+}
+
+.textColor {
+    color: #385b6b;
+
+}
+
+.textColorSky {
+    color: #67b0d1;
+}
+
+.colorSky {
+    background-color: #67b0d1;
+
+}
+
+.bgDarkTeal {
+    background-color: #385b6b;
+}
+
+.fitWidth {
+    width: fit-content;
+}
+
+.boxShadow {
+    box-shadow: 4px 4px 4px 3px rgb(233, 233, 233);
+}
+
+.h1BackImg {
+    background-image: url("img/section-title-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 5rem;
+    width: max-content;
+    display: block;
+    margin: 0px auto;
+    padding: 1rem 0.7rem 0rem 0.7rem;
+}
+
+/* Utility Classes End Here */
+
+/* Media Queries Start Here */
+@media screen and (min-width:0px) and (max-width:576px) {
+    .sec1 {
+        height: 90vh;
+        width: 100vw;
+        background-image: url("img/hero-bg.jpg");
+        background-color: rgb(177, 177, 177);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white !important;
+
+    }
+
+    .homeLink {
+        color: white;
+    }
+
+    .sec1 h1 {
+        text-shadow: 1px 1px 1px gray;
+        font-size: 2.7rem;
+    }
+
+    .sec1 p {
+        text-shadow: 1px 1px 1px gray;
+        font-size: 0.9rem;
+        width: 75%;
+
+    }
+
+    /* Section 2 starts here */
+
+    .sec2 {
+        font-size: 1rem;
+    }
+
+    .sec2 img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .sec2 h4 {
+        margin: 0.6rem 0rem;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+
+
+
+    .sec1 h1 {
+        text-shadow: 1px 1px 1px gray;
+        font-size: 3.2rem;
+    }
+
+    .sec1 p {
+        text-shadow: 1px 1px 1px gray;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    /* Section 2 starts here */
+
+    .sec2 img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .sec2 h4 {
+        margin: 0.6rem 0rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .sec1 {
+        height: 90vh;
+        width: 100vw;
+        background-image: url("img/hero-bg.jpg");
+        background-color: rgb(177, 177, 177);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white !important;
+
+    }
+
+    .homeLink {
+        color: white;
+    }
+
+    .sec1 h1 {
+        text-shadow: 1px 1px 1px gray;
+        font-size: 3rem;
+    }
+
+    .sec1 h3 {
+        text-shadow: 1px 1px 1px gray;
+    }
+
+    /* Section 2 starts here */
+
+    .sec2 {
+        font-size: 0.7rem;
+    }
+
+    .sec2 img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .sec2 h4 {
+        margin: 0.6rem 0rem;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .sec1 {
+        height: 90vh;
+        width: 100vw;
+        background-image: url("img/hero-bg.jpg");
+        background-color: rgb(177, 177, 177);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white !important;
+
+    }
+
+    .homeLink {
+        color: white;
+    }
+
+    .sec1 h1 {
+        text-shadow: 1px 1px 1px gray;
+        font-size: 4rem;
+    }
+
+    .sec1 h3 {
+        text-shadow: 1px 1px 1px gray;
+    }
+
+    /* Section 2 starts here */
+
+    .sec2 {
+        font-size: 0.7rem;
+    }
+
+    .sec2 img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .sec2 h4 {
+        margin: 0.6rem 0rem;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1500px) {
+    .sec1 {
+        height: 90vh;
+        width: 100vw;
+        background-image: url("img/hero-bg.jpg");
+        background-color: rgb(177, 177, 177);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white !important;
+
+    }
+
+    .homeLink {
+        color: white;
+    }
+
+    .sec1 h1 {
+        text-shadow: 1px 1px 1px gray;
+        font-size: 4rem;
+    }
+
+    .sec1 h3 {
+        text-shadow: 1px 1px 1px gray;
+        width: 100%;
+    }
+
+    /* Section 2 starts here */
+
+    .sec2 img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .sec2 h4 {
+        margin: 0.6rem 0rem;
+    }
+}
