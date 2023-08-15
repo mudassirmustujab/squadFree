@@ -85,6 +85,9 @@ body {
 .homeLink {
     color: white;
     background: #ffffff2d;
+    width: fit-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .sec1 h1 {
