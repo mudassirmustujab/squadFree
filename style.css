@@ -7,7 +7,7 @@
 body {
     /* font-family: "Open Sans", sans-serif; */
     font-family: "Raleway", sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Loader Starts Here */
